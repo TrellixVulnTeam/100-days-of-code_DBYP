@@ -4,12 +4,12 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 URL = "https://www.billboard.com/charts/hot-100/"
-APP_CLIENT_ID = "04c50db127864289aca312a997df4f9f"
-APP_CLIENT_SECRET = "474ab4bb89a244cca016378a55c99e3f"
+APP_CLIENT_ID = ""
+APP_CLIENT_SECRET = ""
 APP_REDIRECT_URI = "http://example.com"
 
-# date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
-date = "2000-08-08"
+date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
+# date = "2000-08-08"
 
 response = requests.get(URL+date)
 web_page = response.text
